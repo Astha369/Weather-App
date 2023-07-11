@@ -12,10 +12,10 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   bool isLoaded = false;
-  late num temp;
-  late num press;
-  late num hum;
-  late num cover;
+  num temp = 0;
+  num press = 0;
+  num hum = 0;
+  num cover = 0;
   String cityname = 'London';
   TextEditingController controller = TextEditingController();
 
@@ -285,7 +285,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 8.0),
-                  child: Text("Thank you!", style:
+                  child: Text("", style:
                     TextStyle(
                       fontSize: 20,
                     ),),
